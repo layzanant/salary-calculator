@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Tax Calculator</title>
+  </head>
+  <body>
+    <!-- Tax Calculator block -->
+    <div class="taxCalculate align-column">
+      <h1>Tax Calculator</h1>
+      <form class="align-column">
+        <div class="align-column field-gap">
+          <div class="align-label">
+            <label for="name">Name<span>*</span>:</label>
+            <input type="text" id="name" name="name" />
+          </div>
+          <div id="nameError">Invalid Name.</div>
+        </div>
+        <div class="align-column field-gap">
+          <div class="align-label">
+            <label for="phone">Phone<span>*</span>:</label>
+            <input type="text" id="phone" name="phone" />
+          </div>
+          <div id="phoneError">Invalid Phone Number.</div>
+        </div>
+        <div class="align-column field-gap">
+          <div class="align-label">
+            <label for="email">Email<span>*</span>:</label>
+            <input type="text" id="email" name="email" />
+          </div>
+          <div id="emailError">Invalid Email ID.</div>
+        </div>
+        <div class="align-column field-gap">
+          <div class="align-label">
+            <label for="income">Employment Income<span>*</span>:</label>
+            <input type="text" id="income" name="income" />
+          </div>
+          <div id="incomeError">Invalid Employment Income.</div>
+        </div>
+        <div class="align-column field-gap">
+          <div class="align-label">
+            <label for="otherIncome">Other Income:</label>
+            <input type="text" id="otherIncome" name="otherIncome" />
+          </div>
+          <div id="otherIncomeError">Invalid Other Income.</div>
+        </div>
+        <div class="align-column field-gap">
+          <div class="align-label">
+            <label for="paidTaxes">Income Taxes Paid<span>*</span>:</label>
+            <input type="text" id="paidTaxes" name="paidTaxes" />
+          </div>
+          <div id="paidTaxesError">Invalid Taxes Paid.</div>
+        </div>
+      </form>
+      <div class="align-button">
+        <button onclick="calculateTax()">CALCULATE</button>
+      </div>
+    </div>
+
+    <!-- Calculated Tax Block being displayed dynamically -->
+    <div id="calculatedTax" class="align-column"></div>
+    <script src="js/script.js"></script>
+  </body>
+</html>

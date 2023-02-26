@@ -1,0 +1,89 @@
+/* Main body */
+body {
+    width: 400px;
+    margin: auto;
+    margin-top: 50px;
+    border: 2px solid darkgreen;
+    padding: 20px 40px 40px 40px;
+    font-family: sans-serif;
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 40px;
+}
+
+/* TO align content in column using flex */
+.align-column {
+    display: flex;
+    flex-direction: column;
+}
+
+/* TO align content in row using flex */
+.align-row {
+    display: flex;
+    flex-direction: row;
+}
+
+/* to align item in the start and end of flex */
+.space-evenly {
+    display: flex;
+    place-content: center space-between;
+    margin-bottom: 20px;
+}
+
+/* Aestrick color */
+span {
+    color: red;
+}
+
+/* hide errors in the starting */
+#nameError,
+#phoneError,
+#emailError,
+#incomeError,
+#otherIncomeError,
+#paidTaxesError {
+    display: none;
+    color: red;
+    text-align: end;
+    margin-top: 4px;
+    font-size: small;
+}
+
+/* gaps between the input fields */
+.field-gap {
+    margin-bottom: 20px;
+}
+
+/* calculate button */
+button {
+    padding: 10px 20px 10px 20px;
+    font-weight: bolder;
+    font-size: medium;
+    border: 2px solid darkgreen;
+    background-color: green;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    border: 2px solid green;
+    background-color: darkgreen;
+}
+
+input {
+    border: 2px solid green;
+}
+
+.align-label {
+    display: flex;
+    place-content: center space-between;
+}
+
+.align-button {
+    display: flex;
+    align-self: center;
+}
